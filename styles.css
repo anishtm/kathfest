@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    /* background-color: rgba(128, 128, 128, 0.5); */
+    ;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+header.sticky {
+    position: sticky;
+    top: -20px;
+    width: 100%;
+}
+
+h1 {
+    padding: 0px;
+    /* inline-size: 100px; */
+}
+
+.logo {
+    width: 5%;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+#body_of_page {
+    position: relative;
+}
+
+section {
+    padding: 0px;
+    /* height: 100vh; */
+    min-height: 85vh;
+    overflow: auto;
+}
+
+.inside {
+    padding: 20px;
+}
+
+.inside img {
+    height: 100px;
+}
+
+#home{
+    color: white;
+}
+
+#music-fest {
+    color: white;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#project-demonstration{
+    color: white;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#gaming-events {
+    color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#photography{
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Small screens, such as mobile devices */
+    #music-fest {
+        background-image: url('images/music.jpg');
+    }
+
+    #gaming-events
+    
+    #project-demonstration{
+        background-image: url('images/dd.png');
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+    /* Larger screens, such as tablets and desktops */
+    #home{
+        background-image: url('images/banner2.jpg');
+    }
+    #music-fest {
+        background-image: url('./images/music.jpg');
+    }
+    #gaming-events{
+        background-image: url('images/project demo.jpg');
+    }
+
+    #photography{
+        background-image: url('images/photography.jpg');
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: white;
+    /* text-decoration: none; */
+}
+
+.f_image {
+    height: 50px;
+}
